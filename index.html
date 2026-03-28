@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Pokédex</h1>
+        <input type="text" id="search" placeholder="Search Pokémon by name...">
+    </header>
+    <main>
+        <div id="pokemon-grid" class="pokemon-grid">
+            <!-- Pokémon cards will be inserted here -->
+        </div>
+        <div id="pokemon-details" class="pokemon-details hidden">
+            <div class="details-content">
+                <span id="close-details" class="close">&times;</span>
+                <h2 id="details-name"></h2>
+                <img id="details-image" alt="Pokémon image">
+                <p><strong>Type:</strong> <span id="details-type"></span></p>
+                <p><strong>Height:</strong> <span id="details-height"></span> dm</p>
+                <p><strong>Weight:</strong> <span id="details-weight"></span> hg</p>
+                <p><strong>Abilities:</strong> <span id="details-abilities"></span></p>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
